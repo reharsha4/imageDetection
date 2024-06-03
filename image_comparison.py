@@ -16,9 +16,8 @@ args = vars(ap.parse_args())
 imageA = cv2.imread(args["first"])
 imageB = cv2.imread(args["second"])
 
-'''img = np.array(imageA, dtype=np.uint8)'''
+
 grayA = cv2.cvtColor(imageA, cv2.COLOR_BGR2GRAY)
-'''img = np.array(imageB, dtype=np.uint8)'''
 grayB = cv2.cvtColor(imageB, cv2.COLOR_BGR2GRAY)
 
 
